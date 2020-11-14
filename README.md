@@ -33,3 +33,28 @@ Executed in    4.85 secs   fish           external
 95128b220341e50c0d16a2078fe8eb10  txout_py.txt
 95128b220341e50c0d16a2078fe8eb10  txout_jl.txt
 ```
+
+---
+OK, there's also a C++ implementation. Just for fun... and for the sake for *uncompromised performance.*
+
+#### Compile & run:
+
+```bash
+g++ -Ofast -march=native -flto -fuse-linker-plugin fizzbuzz.cpp -o cppfb.x
+echo "" > txout_cpp.txt
+time cppfb.x >> txout_cpp.txt
+md5sum txout_cpp.txt
+```
+
+#### Example output:
+
+```text
+________________________________________________________
+Executed in    2.03 secs   fish           external
+   usr time    1.74 secs  593.00 micros    1.74 secs
+   sys time    0.29 secs  254.00 micros    0.29 secs
+
+95128b220341e50c0d16a2078fe8eb10  txout_cpp.txt
+```
+
+Well, that was fast!
