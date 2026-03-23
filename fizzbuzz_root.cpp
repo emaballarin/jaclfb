@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()
+void fizzbuzz_root()
 {
     for (size_t i = 1; i <= 20000000; ++i)
     {
@@ -25,10 +25,5 @@ int main()
 
         std::cout << "\n";
     }
-    return 0;
 }
 
-void fizzbuzz_root()
-{
-    main();
-}

@@ -1,9 +1,9 @@
 for i in range(1, length=20000000)
 
-    ret_str = ""    # We are OK with locality!
+    ret_str = ""
 
     if (i % 3) == 0
-        ret_str = string("Fizz")
+        ret_str = "Fizz"
     end
 
     if (i % 5) == 0

@@ -9,9 +9,9 @@ Also known as _a somehow-stupid, somehow-effective comparison of somehow-not-so-
 #### Example usage (`bash` | `zsh` |`fish` shell):
 
 ```bash
-echo "" > txout_py.txt
+echo -n > txout_py.txt
 time python fizzbuzz.py >> txout_py.txt
-echo "" > txout_jl.txt
+echo -n > txout_jl.txt
 time julia fizzbuzz.jl >> txout_jl.txt
 md5sum txout_py.txt txout_jl.txt
 ```
@@ -42,8 +42,8 @@ OK, there's also a C++ implementation. Just for fun... and for the sake for _unc
 
 ```bash
 g++ -Ofast -march=native -flto -fuse-linker-plugin fizzbuzz.cpp -o cppfb.x
-echo "" > txout_cpp.txt
-time cppfb.x >> txout_cpp.txt
+echo -n > txout_cpp.txt
+time ./cppfb.x >> txout_cpp.txt
 md5sum txout_cpp.txt
 ```
 
