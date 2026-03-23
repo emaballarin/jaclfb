@@ -1,8 +1,8 @@
 # `jaclfb`
+
 **j**ust **a** **c**razily **l**arge **f**izz**b**uzz.
 
-Also known as *a somehow-stupid, somehow-effective comparison of somehow-not-so-useful Python and Julia basic instructions and their execution times; with a somehow-scenic effect, though*. 🙃
-
+Also known as _a somehow-stupid, somehow-effective comparison of somehow-not-so-useful Python and Julia basic instructions and their execution times; with a somehow-scenic effect, though_. 🙃
 
 ---
 
@@ -35,7 +35,8 @@ Executed in    4.85 secs   fish           external
 ```
 
 ---
-OK, there's also a C++ implementation. Just for fun... and for the sake for *uncompromised performance.*
+
+OK, there's also a C++ implementation. Just for fun... and for the sake for _uncompromised performance._
 
 #### Compile & run:
 

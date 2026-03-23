@@ -1,5 +1,4 @@
 for i in range(1, 20000001):
-
     ret_str = ""
 
     if not i % 3:
